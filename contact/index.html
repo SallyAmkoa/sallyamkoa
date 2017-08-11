@@ -19,10 +19,14 @@
 </html>
 
 <div class="container">
-    <form  action="index.html" method="post">
-      <input type="text" name="" value="name">
-      <input type="password" name="" value="">
-      <input type="email" name="" value="email">
-      <input type="submit" name="" value="submit">
-    </form>
+    <form action="form-responses/new" method="POST">
+<input type="text" name="firstname" placeholder="First Name" size="20" autofocus>
+<input type="text" name="lastname" placeholder="Last Name" size="20" autofocus>
+<input type="text" name="email" value="your.email@example.com" size="30" autofocus>
 </div>
+
+<label>
+  <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
+  <input type="radio" name="subject" value="personal" checked><span>It's personal :)</span>
+  <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
+</label>
