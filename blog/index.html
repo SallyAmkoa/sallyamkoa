@@ -11,18 +11,25 @@
         color: white
     }
     div {margin-top: 100px
-      color: blue
-    }
+        }
     .header{margin-top: 0
     }
 
     .content-area {
-      background-color: white
-      color: black
-    }
-    .footer{margin-top: 0
+      background-color: blue;
+      color: white;
+      padding:100px;
+      border: 2px dotted:black
+          }
+    .footer{margin-top: 0;
       text: .8em
     }
+  .italic{font-style: italic;
+  }
+  .container {
+    max-width: 80%;
+    margin: 100px auto 0px auto;
+  }
   </style>
 </head>
 
@@ -31,21 +38,21 @@
     <h1>Sally's Blog</h1>
   </div>
 
-  <nav>
+  <nav class="container">
     <a href="../index.html">Home</a>
     <a href="../projects/index.html">Projects</a>
     <a href="../media/index.html">Media</a>
     <a href="#">Blog</a>
   </nav>
 
-  <div class="content-area">
+  <div class="content-area container">
     <h2></h2>
     <p>Welcome to my first blog post! I'll be documenting my foray into
-      <span class="header"> web development </span>.</p>
+      <span class="italic"> web development </span>.</p>
 
   </div>
 
-  <div class="footer">
+  <div class="footer container">
     <a class = "list2" href="mailto:sallyamkoa@gmail.com?subject=feedback">Email me!</a>
     &copy 2017 Sally Amkoa
   </div>
