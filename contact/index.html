@@ -15,26 +15,39 @@
     <a href="../blog/index.html">Blog</a>
     <a href="#">Contact Page</a>
   </nav>
-</body>
-</html>
 
-<div class="container">
-    <form action="form-responses/new" method="POST">
-<input type="text" name="firstname" placeholder="First Name" size="20" autofocus>
-<input type="text" name="lastname" placeholder="Last Name" size="20" autofocus>
-<input type="text" name="email" value="your.email@example.com" size="30" autofocus>
-</div>
+  <form class="" action="//formspree.io/sallyamkoa@example.com" method="POST">
 
-<label>
-  <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
-  <input type="radio" name="subject" value="personal" checked><span>It's personal :)</span>
-  <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
-</label>
+  <fieldset>
+    <legend>About you</legend>
+    <div class="container">
+      <form action="form-responses/new" method="POST">
+        <input type="text" name="firstname" placeholder="First Name" size="20" autofocus>
+        <br>
+        <input type="text" name="lastname" placeholder="Last Name" size="20" autofocus>
+        <br>
+        <input type="text" name="email" value="your.email@example.com" size="30" autofocus>
+    </div>
+  </fieldset>
 
-<input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
+  <fieldset>
+    <legend>Message</legend>
+      <label>
+      <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
+      <input type="radio" name="subject" value="personal" checked><span>It's personal :)</span>
+      <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
+    </label>
+  </fieldset>
+
+<fieldset>
+  <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
  <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox...
+</fieldset>
 
+<fieldset>
+<legend>Marketing</legend>
  <label for="marketing">How did you hear about me?</label>
+ <br>
   <select name="marketing">
     <optgroup label="Online">
       <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
@@ -49,7 +62,12 @@
     </optgroup>
     <option value="other">Other</option>
   </select>
-  
+</fieldset>
+<br>
   <textarea name="user_message" rows="8" cols="40"></textarea>
- <input type="submit">
+  <br>
+ <input type="submit" value="send">
 </form>
+</body>
+
+</html>
