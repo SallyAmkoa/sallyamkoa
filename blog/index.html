@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -35,26 +36,41 @@
 </head>
 
 <body>
-  <div class="header">
+  <div class="header center">
     <h1>Sally's Blog</h1>
   </div>
 
-  <nav class="container">
-    <a href="../index.html">Home</a>
-    <a href="../projects/index.html">Projects</a>
-    <a href="../media/index.html">Media</a>
-    <a href="../contact/index.html">Contact</a>
-    <a href="#">Blog</a>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../projects/index.html">Projects</a></li>
+      <li><a href="../media/index.html">Media</a></li>
+      <li><a href="../contact/index.html">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
   </nav>
 
-  <div class="content-area container">
-    <h2></h2>
+  <div class="content-area container row">
+   <div class="blog-content col-md-9">
     <p>Welcome to my first blog post! I'll be documenting my foray into
       <span class="italic"> web development </span>.</p>
-
   </div>
 
-  <div class="footer container">
+  <div class="sidebar col-md-3">
+    <p>Things I like:</p>
+    <ul class=".ul-container">
+      <li>ice cream</li>
+      <li>chocolate</li>
+      <li>wine</li>
+      <li>game of thrones</li>
+      <li>John Steinbeck</li>
+      <li>Traveling</li>
+      <li>My friends</li>
+    </ul>
+  </div>
+
+  </div>
+  <div class="footer">
     <a class = "list2" href="mailto:sallyamkoa@gmail.com?subject=feedback">Email me!</a>
     &copy 2017 Sally Amkoa
   </div>

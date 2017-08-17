@@ -1,24 +1,90 @@
 
 body {
-    background-color:black;
-    color: white
+    background-color:gray;
+    color: white;
 }
-div {margin-top: 100px
+
+div {margin-top: 100px;
     }
-.header{margin-top: 0
+
+.header{margin-top: 100px;
+  background-color: pink;
 }
+
 .content-area {
   background-color: blue;
-  color: white;
+  color: b;
   padding:100px;
-  border: 2px dotted:black
-      }
+  border: 2px dotted:black;
+  }
+
 .footer{margin-top: 0;
-  text: .8em
+  background-color: blue;
+  text: .8em;
 }
+
 .italic{font-style: italic;
 }
+
+.center{
+  margin:0px auto;
+  max-width: 20%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5em;
+  width: 100vw;
+  background-color: navy;
+  color: white;
+}
+
+nav a {
+  text-decoration:none;
+  color: white
+}
+nav>ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+}
+
+form{
+  margin-top:50px;
+}
+
+div{
+  margin-top:50px;
+}
+
 .container {
-max-width: 80%;
-margin: 100px auto 0px auto;
+  max-width: 960px;
+  overflow: auto;
+}
+
+.sidebar {
+  /*float: left;*/
+  /*width: 25%;*/
+}
+
+.blog-content{
+  width: 70%;
+}
+
+#greeting {
+  background-color: gray;
+  color: black;
+}
+
+.headerfooter{
+margin-top: 100px;
 }

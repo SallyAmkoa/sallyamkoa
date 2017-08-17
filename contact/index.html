@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <title>Document</title>
         <link rel="stylesheet" href="../CSS/style.CSS">
   </head>
 
   <body>
-    <nav class="container">
-      <a href="../index.html">Home</a>
-      <a href="../projects/index.html">Projects</a>
-      <a href="../media/index.html">Media</a>
-      <a href="../blog/index.html">Blog</a>
-      <a href="#">Contact</a>
+    <nav >
+      <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../projects/index.html">Projects</a></li>
+      <li><a href="../media/index.html">Media</a></li>
+      <li><a href="../blog/index.html">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
 
     <form class="" action="//formspree.io/sallyamkoa@example.com" method="POST">
 
       <fieldset>
         <legend>About you</legend>
-              <input type="text" name="firstname" placeholder="First Name" size="20" autofocus required>
-            <br>
-            <input type="text" name="lastname" placeholder="Last Name" size="20" autofocus required>
-            <br>
-            <input type="text" name="email" value="your.email@example.com" size="30" autofocus required>
+          <input type="text" name="firstname" placeholder="First Name" size="20" autofocus required>
+          <input type="text" name="lastname" placeholder="Last Name" size="20" autofocus required>
+          <br> <br>
+          <input type="text" name="email" value="your.email@example.com" size="30" autofocus required>
       </fieldset>
-
+      <br>
       <fieldset>
         <legend>Message</legend>
           <label>
@@ -36,12 +38,13 @@
           <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
         </label>
       </fieldset>
-
+      <br>
     <fieldset>
       <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
      <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox...
     </fieldset>
 
+    <br>
     <fieldset>
       <legend>Marketing</legend>
        <label for="marketing">How did you hear about me?</label>
