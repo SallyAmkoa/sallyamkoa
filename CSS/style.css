@@ -94,3 +94,7 @@ margin-top: 100px;
   color: black;
   background-color: white;
 }
+.highlighted{
+  font-weight: bolder;
+  color: purple;
+}

@@ -41,3 +41,56 @@ var autoFunnySentence = function() {
 }
 
 autoFunnySentence()
+
+var fn = function () {
+  console.log('heeey')
+}
+
+document.querySelector('#target').addEventListener('click', fn);
+
+document.querySelector('#target').addEventListener('click', function() {
+  console.log('same deal')
+});
+
+
+//jQuery event listener
+$('div').on('click', function(){
+    console.log('A div has been clicked!')
+})
+
+// shortcut
+$('p').click(function(){
+  $('p').show().css('color', 'red').text('boom goes the dynamite!')
+});
+
+//mouseover
+// $('li').on('mouseover', function(){
+//   $('li').addClass('highlighted')
+// })
+//
+// //mouseleave
+// $('li').on('mouseleave',function(){
+//    $('li').removeClass('highlighted')
+// })
+
+
+//this and event
+// $('li').on('mouseover', function(event){
+//   var target = event.target;
+//   console.log(event)
+//   $(target).addClass('highlighted')
+// })
+//
+// $('li').on('mouseleave', function(event){
+//   var target = event.target;
+//   $(target).removeClass('highlighted')
+// })
+
+//highilighting lists one bullet at a time
+$('li').on('mouseover', function(){
+  $(this).addClass('highlighted')
+})
+
+$('li').on('mouseleave', function(){
+  $(this).removeClass('highlighted')
+})
