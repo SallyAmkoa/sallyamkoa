@@ -100,7 +100,9 @@ margin-top: 100px;
 }
 .loser{background-color: red
 }
-.winner{background-color: red
+.winner{background-color: green
 }
 .on-point{background-color: blue
+}
+.try-again{(background-color: orange)
 }

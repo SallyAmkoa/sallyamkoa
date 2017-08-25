@@ -39,29 +39,37 @@ $('#roll-button').on('click', function(){
       var sum = die1 + die2
       $('.roll-result').text(sum)
       if (sum ===2 ||sum ===3 ||sum ===12) {
-      $('.status').text('Sorry, you lose!').addClass('loser')
-      gameState.gameOver = true
-    } else if (sum===7 || sum ===11){
-      $('.status').text('Sorry, you lose!').addClass('winner')
-      gameState.gameOver = true
-    } else {
-      $('.status').text('On point ' + sum).addClass('on-point')
-      gameState.pointNum = sum
-      gameState.firstRoll = false
-    }
-  }else {
+        $('.status').text('Sorry, you lose!').addClass('loser')
+        gameState.gameOver = true
+        $('#roll-button').attr('disabled', 'true')
+      } else if (sum===7 || sum ===11){
+        $('.status').text('Yay!!! You lucky bastard!').addClass('winner')
+        gameState.gameOver = true
+        $('#roll-button').attr('disabled', 'true')
+      } else {
+        $('.status').text('On point ' + sum).addClass('on-point')
+        gameState.pointNum = sum
+        gameState.firstRoll = false
+      }
+    }else {
     var die1 = diceRoll()
     var die2 = diceRoll()
     var sum = die1 + die2
     $('.roll-result').text(sum)
     if (sum===7) {
-    $('.status').text('Sorry, you lose!').addClass('loser')
-    gameState.gameOver =true
-  }else if (sum===gameState.pointNum){
-    $('.status').text('Yay!!! You lucky bastard!').addClass('winner')
-    gameState.gameOver =true
-  }else{
-    $('.status').text('Try again.')
-  }
-  }
+      $('.status').text('Sorry, you lose!').addClass('loser')
+      gameState.gameOver =true
+        $('#roll-button').attr('disabled', 'true')
+      }else if (sum===gameState.pointNum){
+      $('.status').text('Yay!!! You lucky bastard!').addClass('winner')
+      gameState.gameOver =true
+      $('#roll-button').attr('disabled', 'true')
+    }else{
+      $('.status').text('Try again.')
+    }
+    }
+  })
+
+$('#play-again').on('click', function(){
+  location.reload(true)
 })
