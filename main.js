@@ -51,10 +51,10 @@
 // appendStrings(contactArray, 'li')
 
 //Exe4
-var contactArray =[
-  '<li ><a class = "list2" href="https://www.linkedin.com/in/sallyamkoa">LinkedIn</a></li>',
-  '<li ><a class = "list2" href="https://www.instagram.com/raissally/">Instagram </a></li>'
-]
+// var contactArray =[
+//   '<li ><a class = "list2" href="https://www.linkedin.com/in/sallyamkoa">LinkedIn</a></li>',
+//   '<li ><a class = "list2" href="https://www.instagram.com/raissally/">Instagram </a></li>'
+// ]
 
 // contactArray.forEach(function(item){
 //   $('#contact-list').append(item)
@@ -62,29 +62,29 @@ var contactArray =[
 
 
 //Objects wk3 mod 5
-
-var contactObject = {
-    "name": {
-        "firstName": "Professor",
-        "lastName": "Chaos"
-    },
-    "email": "professor@professorchaos.com",
-    "twitter": "@ProfChaos",
-    "quote": "Prepare to meet thy doom"
-}
-
-contactObject["phone"] = "123-456-7890";
-contactObject.quote = [
-    "Prepare to meet thy doom",
-    "Nobody expects Professor Chaos",
-    "Bow before the power of the DARK SIDE"
-]
+//
+// var contactObject = {
+//     "name": {
+//         "firstName": "Professor",
+//         "lastName": "Chaos"
+//     },
+//     "email": "professor@professorchaos.com",
+//     "twitter": "@ProfChaos",
+//     "quote": "Prepare to meet thy doom"
+// }
+//
+// contactObject["phone"] = "123-456-7890";
+// contactObject.quote = [
+//     "Prepare to meet thy doom",
+//     "Nobody expects Professor Chaos",
+//     "Bow before the power of the DARK SIDE"
+// ]
 
 // check the state of our Object
-console.log(contactObject);
-
-var sayingOfTheDay = "quote";
-console.log( contactObject[sayingOfTheDay] );
+// console.log(contactObject);
+//
+// var sayingOfTheDay = "quote";
+// console.log( contactObject[sayingOfTheDay] );
 
 // contactObject.getLinkedin = function(){
 //     return contactObject.linkedin
@@ -92,31 +92,38 @@ console.log( contactObject[sayingOfTheDay] );
 // console.log(contactObject.getLinkedin());
 
 //Ex 3
-var elementLister = function( contactElement ){
-  var listString = "<li>" + contactElement + "</li>";
-  if(Array.isArray( contactElement )){
-    listString = "<ol>";
-
-        contactElement.forEach( function( element ){
-          listString += "<li>" + element + "</li>";
-        });
-
-        listString += "</ol>";
-      } else if(typeof contactElement === "object"){
-        listString = "<li>";
-
-        for(var element in contactElement){
-          listString += contactElement[element] + " ";
-        }
-        listString += "</li>";
-      }
-
-      $("#contact-list").append(listString);
-    };
+// var elementLister = function( contactElement ){
+//   var listString = "<li>" + contactElement + "</li>";
+//   if(Array.isArray( contactElement )){
+//     listString = "<ol>";
+//
+//         contactElement.forEach( function( element ){
+//           listString += "<li>" + element + "</li>";
+//         });
+//
+//         listString += "</ol>";
+//       } else if(typeof contactElement === "object"){
+//         listString = "<li>";
+//
+//         for(var element in contactElement){
+//           listString += contactElement[element] + " ";
+//         }
+//         listString += "</li>";
+//       }
+//
+//       $("#contact-list").append(listString);
+//     };
 
     // for(var contactType in contactObject){
     //   elementLister( contactObject[contactType] );
     // }
-    contactArray.forEach(function(item){
-      $('#contact-list').append(item)
-    })
+    // contactArray.forEach(function(item){
+    //   $('#contact-list').append(item)
+    // })
+
+//PROMISES
+var request = $.ajax( "https://jsonplaceholder.typicode.com/posts" );
+
+request.then(
+    ( data ) => console.log( data )
+);
